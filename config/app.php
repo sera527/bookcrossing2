@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://bookcrossing2.azurewebsites.net',
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'uk',
 
     /*
     |--------------------------------------------------------------------------
@@ -151,10 +151,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Bookcrossing\Providers\AppServiceProvider::class,
+        Bookcrossing\Providers\AuthServiceProvider::class,
+        Bookcrossing\Providers\EventServiceProvider::class,
+        Bookcrossing\Providers\RouteServiceProvider::class,
+        Fenos\Notifynder\NotifynderServiceProvider::class,
 
     ],
 
@@ -201,6 +202,9 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        'Notifynder'=> Fenos\Notifynder\Facades\Notifynder::class,
+
 
     ],
 

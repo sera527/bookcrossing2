@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Bookcrossing\Http\Controllers\Auth;
 
-use App\User;
+use Bookcrossing\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Bookcrossing\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
